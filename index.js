@@ -1,9 +1,9 @@
 console.log("Welcome to Tic Tac Toe")
 
-let music = new Audio("elements/music.mp3")
-let audioturn = new Audio("elements/ting.mp3")
-let gameover = new Audio("elements/gameover.mp3")
-var wining = new Audio("elements/wining.wav")
+let music = new Audio("music.mp3")
+let audioturn = new Audio("ting.mp3")
+let gameover = new Audio("gameover.mp3")
+var wining = new Audio("wining.wav")
 audioturn.preload = "auto"
 
 var turn = "X"
