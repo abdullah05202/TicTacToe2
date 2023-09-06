@@ -1,9 +1,9 @@
 console.log("Welcome to Tic Tac Toe")
 
-let music = new Audio("music.mp3")
-let audioturn = new Audio("ting.mp3")
-let gameover = new Audio("gameover.mp3")
-var wining = new Audio("wining.wav")
+let music = new Audio("elements/music.mp3")
+let audioturn = new Audio("elements/ting.mp3")
+let gameover = new Audio("elements/gameover.mp3")
+var wining = new Audio("elements/wining.wav")
 audioturn.preload = "auto"
 
 var turn = "X"
@@ -44,8 +44,7 @@ const checkWin = ()=>{
 }
 
 //Game Logic:
-music.play();
-
+music.play();                                                  //allow the browser to play music
 let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach(element=>{  //element is a div whose id is box
 
@@ -85,7 +84,6 @@ reset.addEventListener('click', ()=>{
 
     
 })
-
 
 
 
